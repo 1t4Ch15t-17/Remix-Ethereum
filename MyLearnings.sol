@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
+pragma solidity ^0.5.0;
 
 contract MyContract {
     // public type used to set the visibility of the declared variable in the blockchain system
@@ -84,7 +84,7 @@ contract MyContract {
     }
 
     // constructors
-    constructor(string memory _name) { // constructor is a function that runs once and only once when the contract is initialized on the blockchain, it can take functions, variables or other smart contracts as parameters, can be made payable, send ether and pratically all roles but can be called only once
+    constructor(string memory _name) public { // constructor is a function that runs once and only once when the contract is initialized on the blockchain, it can take functions, variables or other smart contracts as parameters, can be made payable, send ether and practically all roles but can be called only once
         name = _name;
     }
 
